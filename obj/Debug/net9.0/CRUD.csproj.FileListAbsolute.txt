@@ -1,0 +1,14 @@
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\bin\Debug\net9.0\CRUD.exe
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\bin\Debug\net9.0\CRUD.deps.json
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\bin\Debug\net9.0\CRUD.runtimeconfig.json
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\bin\Debug\net9.0\CRUD.dll
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\bin\Debug\net9.0\CRUD.pdb
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.AssemblyInfoInputs.cache
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.AssemblyInfo.cs
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.csproj.CoreCompileInputs.cache
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.dll
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\refint\CRUD.dll
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.pdb
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.genruntimeconfig.cache
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\ref\CRUD.dll
