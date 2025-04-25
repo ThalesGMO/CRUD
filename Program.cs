@@ -17,6 +17,8 @@ double valorDoisAmores = 78;
 double valorAbacaxi = 80;
 double valortotal = 0;
 var opcao = 1;
+
+List<string> Endereco;
 PrintMenu();
 
 
@@ -70,10 +72,14 @@ while(opcao == 1)
         Console.WriteLine("O valor da conta deu: " + valortotal + " REAIS, PODENDO SER PAGOS EM MAMADAS");
 }
 
-
- 
-  
-
-
-
+    string DadosUsuario()
+    {
+    Console.WriteLine("Digite seu nome: ");
+    string NomeUsuario = Console.ReadLine();
+    Console.Clear();
+    Console.WriteLine("Digite seu endereço: ");
+    string Endereço = Console.ReadLine();
+    Endereco.Add(Endereço);
+    return "ASas";
+    }
 
