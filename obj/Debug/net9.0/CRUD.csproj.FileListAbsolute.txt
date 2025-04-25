@@ -12,3 +12,4 @@ C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\refint\CRU
 C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.pdb
 C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.genruntimeconfig.cache
 C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\ref\CRUD.dll
+C:\Users\thale\OneDrive\Desktop\Projetinho\CRUD\CRUD\obj\Debug\net9.0\CRUD.sourcelink.json

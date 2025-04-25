@@ -22,13 +22,14 @@ PrintMenu();
 
 int SaborEscolhido()
 {
-Console.WriteLine("Escolha o sabor");
-int valorDigitado = int.Parse(Console.ReadLine());
-return valorDigitado;
+    Console.WriteLine("Escolha o sabor");
+    int valorDigitado = int.Parse(Console.ReadLine());
+    return valorDigitado;
 }
-int valorDigitado = SaborEscolhido();
+
 while(opcao == 1)
 {
+    int valorDigitado = SaborEscolhido();
     switch(valorDigitado)
     {
         case 1:
@@ -45,26 +46,28 @@ while(opcao == 1)
 
         case 3:
         Thread.Sleep(1000);
-        Console.WriteLine("Você escolheu a pizza de frango");   
+        Console.WriteLine("Você escolheu a pizza de frango");
+        valortotal += valorFrango;
         break;
         
         case 4:
         Thread.Sleep(1000);
         Console.WriteLine("Você escolheu a pizza de dois amores"); 
+        valortotal += valorDoisAmores;
         break;
 
         case 5:
         Thread.Sleep(1000);
         Console.WriteLine("Você escolheu a pizza de abacaxí"); 
+        valortotal += valorAbacaxi;
         break;
 
     }
     Console.WriteLine("Gostaria de escolher um nov1o sabor? 1-SIM  0-NAO");
     opcao = int.Parse(Console.ReadLine());
-    if(opcao == 1)
-    SaborEscolhido();
-    else
-    Console.WriteLine("valentin chupa penis");
+
+    if(opcao != 1)
+        Console.WriteLine("O valor da conta deu: " + valortotal + " REAIS, PODENDO SER PAGOS EM MAMADAS");
 }
 
 
