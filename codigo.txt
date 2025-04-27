@@ -1,0 +1,10 @@
+string DadosUsuario()
+    {
+    Console.WriteLine("Digite seu nome: ");
+    string NomeUsuario = Console.ReadLine();
+    Console.Clear();
+    Console.WriteLine("Digite seu endereço: ");
+    string Endereço = Console.ReadLine();
+    Endereco.Add(Endereço);
+    return "ASas";
+    }
