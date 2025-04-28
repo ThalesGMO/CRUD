@@ -1,5 +1,6 @@
 ﻿
 using System.Diagnostics;
+using System.Net;
 
 void PrintMenu()
 {
@@ -18,9 +19,13 @@ double valorFrango = 78;
 double valorDoisAmores = 78;
 double valorAbacaxi = 80;
 double valortotal = 0;
+double valorCoca = 12;
+double valorGuaraná = 10;
+var confirmaçãoRefri = 1;
 var opcao = 1;
 List<string> saborDaPizza = new List<string>();
 List<string> metodoPagamento = new List<string>();
+List<string> refrigeranteLista = new List<string>();
 
 
 int SaborEscolhido()
@@ -80,17 +85,71 @@ while (opcao == 1)
     opcao = int.Parse(Console.ReadLine());
 
     if (opcao != 1)
-        Console.WriteLine("O valor da conta deu " + valortotal + " Reais. Gostaria de seguir para a finalização da compra? 1:SIM   2:NÃO");
+    {
+        Console.WriteLine("Gostaria de adicionar refrigerante? 1:SIM   2:NÃO");
+        confirmaçãoRefri = int.Parse(Console.ReadLine());
+        if (confirmaçãoRefri == 1)
+        {
+            PrintRefrigerante();
+            EscolhaRefrigerante();
+
+        }
+        else
+            confirmação();
+    }
+
+}
+void PrintRefrigerante()
+{
+    Console.WriteLine("================REFRIGERANTES=================");
+    Console.WriteLine("[1] - Coca-Cola 1 Litro ..............R$ 12,00");
+    Console.WriteLine("[2] - Guaraná 1 Litro ................R$ 10,00");
+    Console.WriteLine("==============================================");
 }
 
-int aceitarCompra = int.Parse(Console.ReadLine());
-if (aceitarCompra == 1)
-    formasDePagamento();
-else
-    Console.WriteLine("Obrigado, até a próxima");
+
+int EscolhaRefrigerante()
+{
+    int refrigerante = int.Parse(Console.ReadLine());
+
+    switch (refrigerante)
+    {
+        case 1:
+            Thread.Sleep(1000);
+            Console.WriteLine("Você adicionou Coca-Cola de 1 litro");
+            valortotal += valorCoca;
+            refrigeranteLista.Add("Coca-Cola de 1 Litro");
+            break;
+
+        case 2:
+            Thread.Sleep(1000);
+            Console.WriteLine("Você adicionou Guaraná de 1 litro");
+            refrigeranteLista.Add("Guaraná de 1 Litro");
+            valortotal += valorGuaraná;
+            break;
+    }
+    confirmação();
+    return refrigerante;
+
+   
+    
+}
+int confirmação()
+{
+Console.WriteLine("o valor da compra deu " + valortotal + " Gostaria de prosseguir com a compra? [1] - SIM /  [2] - NÃO");
+    int aceitarCompra = int.Parse(Console.ReadLine());
+    if (aceitarCompra == 1)
+        formasDePagamento();
+    else
+    {
+     Console.WriteLine("Obrigado, até a próxima");
+    }
+     return aceitarCompra;
+}
+
+
 
 int formasDePagamento()
-
 {
     Console.WriteLine("==========METODOS DE PAGAMENTO===========");
     Console.WriteLine("1: Pagamento com Débito");
@@ -98,7 +157,7 @@ int formasDePagamento()
     Console.WriteLine("3: Pagamento com pix");
     Console.WriteLine("4: Pagamento em dinheiro");
     Console.WriteLine("==========================================");
-    Console.WriteLine("Selecione o método de pagamento");
+    Console.WriteLine("      Selecione o método de pagamento     ");
 
     if (!int.TryParse(Console.ReadLine(), out int EscolhaPagamento))
     {
@@ -154,14 +213,17 @@ foreach (string pizza in saborDaPizza)
 {
     Console.WriteLine($"Sabor(es) escolhido(s): {pizza} ");
 }
+
+foreach (string refri in refrigeranteLista)
+{
+    Console.WriteLine($"você adicionou uma {refri}");
+}
+
 foreach (string metodo in metodoPagamento)
 {
     Console.WriteLine($"Metodo de pagamnto: {metodo}");
 }
+Console.WriteLine($"Valor total: {valortotal}");
 Console.WriteLine($"Endereço: {Local}");
 Console.WriteLine("              Sua pizza está sendo preparada!");
 Console.WriteLine("========================================================");
-
-// Quero fazer a lista aparecer o sabor, acho que pra isso preciso declarar uma variavel string (sabor da pizza)
-// HAHAHAHHAHAHAHA AAAAAAAAAAAAAAAAAAI BOLSONARO
-// Certo, declarar uma variável maior que englobe o sabor das pizzas (SaborPizza), abrir variaveis menores dos sabores que 
